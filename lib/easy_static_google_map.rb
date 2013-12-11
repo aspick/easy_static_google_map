@@ -19,7 +19,7 @@ module EasyStaticGoogleMap
 
 	def self.map_url(address,options = {})
 		# location = self.geocode(address)
-		url = "http://maps.googleapis.com/maps/api/staticmap?"
+		url = "//maps.googleapis.com/maps/api/staticmap?"
 
 		width = options[:width] || 400
 		height = options[:height] || 400
