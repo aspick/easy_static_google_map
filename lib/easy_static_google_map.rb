@@ -12,8 +12,12 @@ module EasyStaticGoogleMap
 		reqUrl = "#{baseUrl}?address=#{address}&sensor=false&language=ja"
 		response = Net::HTTP.get_response(URI.parse(reqUrl))
 		status = JSON.parse(response.body)
-		hash['lat'] = status['results'][0]['geometry']['location']['lat']
-		hash['lng'] = status['results'][0]['geometry']['location']['lng']
+		begin
+			hash['lat'] = status['results'][0]['geometry']['location']['lat']
+			hash['lng'] = status['results'][0]['geometry']['location']['lng']
+		rescue
+			return nil
+		end
 		return hash
 	end
 
