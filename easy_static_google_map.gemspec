@@ -6,10 +6,10 @@ require 'easy_static_google_map/version'
 Gem::Specification.new do |spec|
   spec.name          = "easy_static_google_map"
   spec.version       = EasyStaticGoogleMap::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.authors       = ["Yugo Terada"]
+  spec.email         = ["yugo@18th-lab.com"]
+  spec.description   = ""
+  spec.summary       = ""
   spec.homepage      = ""
   spec.license       = "MIT"
 
