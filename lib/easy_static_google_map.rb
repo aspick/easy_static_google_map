@@ -29,10 +29,11 @@ module EasyStaticGoogleMap
 		height = options[:height] || 400
 		zoom = options[:zoom] || 16
 		scale = options[:scale] || 1
+		key = options[:key] || ''
 		address = URI.encode(address)
 
-		params = "zoom=#{zoom}&size=#{width}x#{height}&markers=#{address}&scale=#{scale}&sensor=false&language=ja"
-	
+		params = "zoom=#{zoom}&size=#{width}x#{height}&markers=#{address}&scale=#{scale}&sensor=false&language=ja&key=#{key}"
+
 		return url + params
 	end
 
